@@ -152,7 +152,7 @@ function App() {
           </div>
         </div>
 
-        {pioneer === 'Yes' && (
+        {watch(formName.pioneer) === 'Yes' && (
           <div className='flex flex-col'>
             <label className='label' htmlFor='hours'>
               Number of Hours

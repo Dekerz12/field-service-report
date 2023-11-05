@@ -1,0 +1,10 @@
+@import url('https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/fonts/google-sans.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .label {
+    @apply text-lg;
+  }
+}

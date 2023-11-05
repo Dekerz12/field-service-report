@@ -152,18 +152,17 @@ function App() {
           </div>
         </div>
 
-        {watch(formName.pioneer) === 'Yes' && (
-          <div className='flex flex-col'>
-            <label className='label' htmlFor='hours'>
-              Number of Hours
-            </label>
-            <input
-              id='hours'
-              className='pl-2 border rounded'
-              {...register(formName.hours)}
-            />
-          </div>
-        )}
+        <div className='flex flex-col'>
+          <label className='label' htmlFor='hours'>
+            Number of Hours
+          </label>
+          <input
+            id='hours'
+            className='pl-2 border rounded'
+            disabled={watch(formName.pioneer) !== 'Yes'}
+            {...register(formName.hours)}
+          />
+        </div>
 
         <button
           className='px-4 py-2 rounded text-slate-200 bg-blue-950'

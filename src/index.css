@@ -5,6 +5,6 @@
 
 @layer components {
   .label {
-    @apply text-lg;
+    @apply text-xl;
   }
 }

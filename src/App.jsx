@@ -56,7 +56,7 @@ function App() {
           </label>
           <input
             id='name'
-            className='border rounded bg-transparent flex-1'
+            className='border rounded flex-1'
             {...register(formName.name, { required: true })}
           />
         </div>
